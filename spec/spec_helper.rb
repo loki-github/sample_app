@@ -4,12 +4,9 @@ require 'spork'
 #require 'spork/ext/ruby-debug'
 
 Spork.prefork do
-<<<<<<< HEAD
-=======
   # Loading more in this block will cause your tests to run faster. However,
   # if you change any configuration or code from libraries loaded here, you'll
   # need to restart spork for it take effect.
->>>>>>> c2d8d6e77d3536422ca4025d951f462d29161dfa
   ENV["RAILS_ENV"] ||= 'test'
   require File.expand_path("../../config/environment", __FILE__)
   require 'rspec/rails'
@@ -52,11 +49,6 @@ Spork.prefork do
     config.order = "random"
     config.include Capybara::DSL
   end
-<<<<<<< HEAD
-  # Loading more in this block will cause your tests to run faster. However,
-  # if you change any configuration or code from libraries loaded here, you'll
-  # need to restart spork for it take effect.
-
 end
 
 Spork.each_run do
@@ -64,15 +56,6 @@ Spork.each_run do
 
 end
 
-=======
-end
-
-Spork.each_run do
-  # This code will be run each time you run your specs.
-
-end
-
->>>>>>> c2d8d6e77d3536422ca4025d951f462d29161dfa
 # --- Instructions ---
 # Sort the contents of this file into a Spork.prefork and a Spork.each_run
 # block.
@@ -101,11 +84,3 @@ end
 #
 # These instructions should self-destruct in 10 seconds.  If they don't, feel
 # free to delete them.
-
-<<<<<<< HEAD
-
-
-
-
-=======
->>>>>>> c2d8d6e77d3536422ca4025d951f462d29161dfa
