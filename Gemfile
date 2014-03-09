@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 #ruby-gemset=railstutorial_rails_4_0
-# GIT workflow understanding
+# loki's comment GIT workflow understanding second time
 
 gem 'rails', '4.0.3'
 
