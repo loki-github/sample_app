@@ -7,7 +7,7 @@ def create
 	if user && user.authenticate(params[:session][:password])
 		# Sign the user in and redirect to the users's show page.
 		sign_in user
-		redirect_to user
+		redirect_back_or user
 	else
 		flash.now[:error]='Invalid email/password combination' #not quite right
 		render 'new'
